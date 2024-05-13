@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./index.js" defer></script>
+  <title>Portifólio</title>
+  
+  <style>
+    
+    .honk {
+      font-family: "Honk", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+    }
+
+    .typing-animation::after {
+      content: "|";
+      animation: blink-caret 0.75s step-end infinite alternate;
+      color: #0ead0e;
+    }
+
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: black;
+      }
+    }
+  </style>
+
+</head>
+<body class="bg-neutral-200">
+  
+  <header class="p-6 h-20">
+
+    <div class="flex justify-center items-center">
+      
+      <nav class="bg-white rounded-full max-w-[700px] w-[700px] relative">
+        
+        <ul class="flex gap-2 justify-center items-center p-2">
+          
+          <li class="hover:underline transition-all duration-500 font-semibold cursor-pointer" id="skills" >Skills</li>
+          
+          <span>-</span>
+          
+          <li class="hover:underline transition-all duration-500 font-semibold cursor-pointer" id="projects" >Projects</li>
+          
+          <span>-</span>
+          
+          <li class="hover:underline transition-all duration-500 font-semibold cursor-pointer" id="contact" >Contact-me</li>
+          
+        </ul>
+
+        <span class="absolute right-1 top-1 cursor-pointer hover:rounded-full hover:bg-green-500 flex justify-center items-center p-1 transition-all duration-500 max-sm:hidden">
+          <span class="material-symbols-outlined" id="icon">
+            dark_mode
+          </span>
+        </span>
+      
+      </nav>
+    
+    </div>
+
+  </header>
+
+  <main class="flex justify-center items-center flex-col">
+    
+    <section class="bg-white rounded-t-3xl w-[80%] max-sm:w-full transition-all duration-700">
+  
+      <div class="p-10 flex items-center gap-4 max-[1000px]:flex-col lg:justify-around">
+        <!-- about me -->
+        <div class=" flex items-center gap-10 max-md:flex-col transition-all duration-500">
+
+          <div class="w-[150px] lg:w-[300px] overflow-hidden rounded-full border-4">
+            <img src="https://avatars.githubusercontent.com/u/128937549?v=4" alt="Photo-user" class="w-full object-cover">
+          </div>
+
+          <div>
+            <h1 class="text-6xl max-xl:text-5xl max-md:text-4xl transition-all duration-500">Hi my name is Erick,</h1>
+            <h1 class="text-6xl max-xl:text-5xl max-md:text-4xl transition-all duration-500 typing-animation honk"></h1>
+          </div>
+
+        </div>
+    
+      </div>
+
+      <div class="max-w-[800px] min-w-[300px] p-7 mx-auto">
+        <p>Sou um desenvolvedor web apaixonado por criar experiências digitais impactantes. Com habilidades em front-end, back-end e design de interfaces, busco constantemente aprimorar minhas capacidades e estar atualizado com as últimas tecnologias. Sou comprometido com a entrega de projetos de alta qualidade, utilizando metodologias ágeis e comunicação eficaz. Estou sempre aberto a novos desafios e oportunidades de colaboração em projetos inovadores.</p>
+      </div>
+
+      <div class="flex gap-10 justify-center items-center p-7">
+        <button class="font-semibold rounded-full bg-green-500 w-[200px] h-12 border-2 hover:scale-90 hover:shadow-xl hover:border-black transition duration-300">
+          <a href="mailto:erickkramer@outlook.pt?subject=Vaga%20de%20Estagio&body=Olá,%20estou%20entrando%20em%20contato%20..." target="_blank">Get in touch</a>
+        </button>
+        <button class="font-semibold rounded-full bg-green-500 w-[200px] h-12 border-2 hover:scale-90 hover:shadow-xl hover:border-black transition duration-300">
+          <a href="../public/Curriculo Desenvolvedor-web(Atualizado).pdf" download>Download CV</a>  
+        </button>
+  
+      </div>
+  
+      <div class="h-96 flex items-center justify-center bg-fixed bg-cover bg-baner">
+        <!-- Baner -->
+        <div class="bg-cover bg-center text-5xl text-white">
+          <h1 class="honk">HELLO WORLD</h1>
+        </div>
+      </div>
+  
+      <div class=" flex gap-1 justify-center items-center p-1 mt-10 flex-col">
+        <!-- skills -->
+
+        <div class="text-5xl" id="hSkills">
+          <h1>Skills</h1>
+        </div>
+
+        <div class="flex gap-2 justify-center items-center p-3 mt-10 flex-wrap">
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/Javascript.svg" alt="Javascript">
+          </div>
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/Typescript.svg" alt="Typescript">
+          </div>
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/HTML5.svg" alt="HTML5">
+          </div>
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/CSS3.svg" alt="CSS3">
+          </div>
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/React.svg" alt="React.js">
+          </div>
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/Node.js.svg" alt="Node.js">
+          </div>
+          <div class=" hover:scale-110 transition duration-300 w-20 max-[800px]:w-16 ">
+            <img src="../public/icon/Tailwindcss.svg" alt="TailwindCss">
+          </div>
+                </div>
+        </div>
+  
+      <div class="rounded-t-3xl flex gap-7 items-center justify-center p-10 my-2 flex-col">
+        <!-- projects -->
+
+        <div class="text-5xl" id="hProject">
+          <h1>Projects</h1>
+        </div>
+        
+        <div class="flex flex-col gap-7">
+  
+            <div class=" flex gap-10 max-lg:gap-4 items-center max-lg:justify-center max-lg:items-center border-b-2 p-4 max-xl:flex-col">
+
+              <div class="w-[350px] h-[200px] rounded-md bg-primary hover:scale-110 transition-all duration-500 hover:border hover:border-black">
+                <a href="https://github.com/ERICK-KRAMER/App-Delivery" target="_blank">
+                <img src="../public/projects/DeliveryApp.png" alt="" class="w-full h-full object-cover"></a>
+              </div>
+
+              <span class=" p-4 w-[600px] max-lg:w-[500px] max-md:w-[350px]">
+                <h3 class="text-2xl text-center uppercase py-3 font-medium">App Delivery</h3>
+                <p>Este é um aplicativo de delivery desenvolvido com React no frontend e Node.js (com Express) no backend, utilizando MongoDB como banco de dados. Ele permite que os usuários visualizem e comprem produtos de um restaurante de forma online.</p>
+              </span>
+              
+            </div>
+            <div class=" flex gap-10 max-lg:gap-4 items-center max-lg:justify-center max-lg:items-center border-b-2 p-4 max-xl:flex-col">
+
+              <div class="w-[350px] h-[200px] rounded-md bg-primary hover:scale-110 transition-all duration-500 hover:border hover:border-black"><a href="https://github.com/ERICK-KRAMER/Blog-Backend" target="_blank">
+                <img src="https://f.i.uol.com.br/fotografia/2022/03/17/16474913456232b911773e6_1647491345_3x2_lg.jpg" alt="" class="w-full h-full object-cover"></a>
+              </div>
+
+              <span class=" p-4 w-[600px] max-lg:w-[500px] max-md:w-[350px]">
+                <h3 class="text-2xl text-center uppercase py-3 font-medium">XYZ</h3>
+                <p>Este projeto XYZ é uma API construída com Express.js para gerenciar usuários, posts e comentários em uma aplicação web. Ele oferece funcionalidades essenciais para gerenciamento de usuários, posts e comentários, incluindo autenticação de usuários, criação, leitura, atualização e remoção de dados.</p>
+              </span>
+
+            </div>
+            <div class=" flex gap-10 max-lg:gap-4 items-center max-lg:justify-center max-lg:items-center border-b-2 p-4 max-xl:flex-col">
+
+              <div class="w-[350px] h-[200px] rounded-md bg-primary hover:scale-110 transition-all duration-500 hover:border hover:border-black">
+                <img src="../public/projects/login.png" alt="" class="w-full h-full object-cover">
+              </div>
+
+              <span class=" p-4 w-[600px] max-lg:w-[500px] max-md:w-[350px]">
+                <h3 class="text-2xl text-center uppercase py-3 font-medium">Authentication Login</h3>
+                <p>Você criou uma aplicação Node.js com Express e Prisma para autenticação de usuários, usando PostgreSQL como banco de dados. Os endpoints permitem registro e login de usuários, com validação de entrada usando Zod. A interface de usuário React permite alternar entre as telas de registro e login, exibindo mensagens de erro quando necessário. A aplicação também inclui imagens e estilos para uma experiência de usuário agradável.</p>
+              </span>
+
+            </div>
+            <div class=" flex gap-10 max-lg:gap-4 items-center max-lg:justify-center max-lg:items-center border-b-2 p-4 max-xl:flex-col">
+
+              <div class="w-[350px] h-[200px] rounded-md bg-primary hover:scale-110 transition-all duration-500 hover:border hover:border-black">
+                <a href="https://github.com/ERICK-KRAMER/Spotify_Api" target="_blank">
+                <img src="../public/projects/spotify.png" alt="" class="w-full h-full object-cover"></a>
+              </div>
+
+              <span class=" p-4 w-[600px] max-lg:w-[500px] max-md:w-[350px]">
+                <h3 class="text-2xl text-center uppercase py-3 font-medium">App music</h3>
+                <p>Uma aplicação que interage com a API do Spotify para buscar músicas, informações de faixas e artistas, e principais faixas de um artista. Ele utiliza autenticação de cliente para obter tokens de acesso, fazendo solicitações autenticadas usando Axios. Além disso, há um componente de interface de usuário (UI).</p>
+              </span>
+
+            </div>
+            <div class=" flex gap-10 max-lg:gap-4 items-center max-lg:justify-center max-lg:items-center border-b-2 p-4 max-xl:flex-col">
+
+              <div class="w-[350px] h-[200px] rounded-md bg-primary hover:scale-110 transition-all duration-500 hover:border hover:border-black"><a href="https://github.com/ERICK-KRAMER/Loja_react_node.js" target="_blank">
+                <img src="../public/projects/Sem título.png" alt="" class="w-full h-full object-cover"></a>
+              </div>
+
+              <span class=" p-4 w-[600px] max-lg:w-[500px] max-md:w-[350px]">
+                <h3 class="text-2xl text-center uppercase py-3 font-medium">Controle de Estoque</h3>
+                <p>A aplicação consiste em um backend Node.js com Express e MongoDB para gerenciar rotas, permitindo operações CRUD. O frontend é desenvolvido em React, utilizando React Router para navegação entre páginas, com funcionalidades como login e manipulação de dados em uma área administrativa. O servidor Express serve arquivos estáticos e lida com requisições CORS, enquanto a conexão com o MongoDB é feita usando Mongoose.</p>
+              </span>
+
+            </div>
+  
+        </div>
+  
+      </div>
+
+      <div class="p-6 flex justify-center">
+        <p>Acesse o Github para ver outros repositorios clicando <a href="https://github.com/ERICK-KRAMER/" target="_blank" class="text-green-500 font-extrabold text-lg hover:underline">aqui!</a></p>
+      </div>
+  
+      <footer class="bg-black rounded-t-3xl z-10 text-white p-7" id="footer">
+
+        <div>
+          <h1 class="text-2xl font-bold">Contact Me:</h1>
+          <span class=" p-6 indent-4">
+            <p class=" text-gray-400">
+              Full Stack software engineer experienced in designing and implementing robust, scalable and innovative web solutions. Adept at leveraging a comprehensive skill set that spans front-end and back-end technologies. 
+            </p>
+          </span>
+        </div>
+
+        <div class="email flex gap-3 items-center mt-4 cursor-pointer w-72">
+          <a href="mailto:erickkramer@outlook.pt?subject=Vaga%20de%20Estagio&body=Olá,%20estou%20entrando%20em%20contato%20..." target="_blank">
+            <p class=" font-bold ">erickkramer@outlook.pt</p>
+          </a>
+        </div>
+      
+        <div class=" flex gap-2 items-center p-3 mt-10 max-[750px]:justify-center">
+          <!-- contact -->
+            <div class=" w-16 flex flex-col items-center">
+              <a href="https://github.com/ERICK-KRAMER/" target="_blank">
+                <img src="../public/icon/github.svg" alt="github" class="hover:scale-110 transition duration-300">
+              </a>
+              <p>Github</p>
+            </div>
+    
+            <div class=" w-16 flex flex-col items-center">
+              <a href="https://www.linkedin.com/in/erick-kramer-3826862a9/" target="_blank">
+                <img src="../public/icon/linkedin.svg" alt="linkedin" class="hover:scale-110 transition duration-300">
+              </a>
+              <p>Linkedin</p>
+            </div>
+    
+            <div class=" w-16 flex flex-col items-center">
+              <img src="../public/icon/facebook.svg" alt="facebook" class="hover:scale-110 transition duration-300">
+              <p>Facebook</p>
+            </div>
+    
+            <div class=" w-16 flex flex-col items-center">
+              <img src="../public/icon/instagram.svg" alt="instagram" class="hover:scale-110 transition duration-300">
+              <p>Instagram</p>
+            </div>
+    
+        </div>
+  
+      </footer>
+
+    </section>
+
+  </main>
+  
+  <script>
+
+    const text = " i'm Developer !";
+    let index = 0;
+    const interval = 200; 
+
+    function typeWriter() {
+      if (index < text.length) {
+        document.querySelector('.typing-animation').textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, interval);
+      } else {
+        index = 0;
+        document.querySelector('.typing-animation').textContent = "";
+        setTimeout(typeWriter, interval);
+      }
+    }
+
+    window.onload = function() {
+      typeWriter();
+    };
+
+  </script>
+
+</body>
+</html>
